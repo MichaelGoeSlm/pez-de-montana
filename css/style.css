@@ -162,6 +162,38 @@ img {
     color: var(--primary);
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.lang-btn:hover {
+    background: var(--bg);
+    color: var(--primary);
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -444,6 +476,15 @@ img {
     
     .nav-toggle {
         display: flex;
+    }
+    
+    .lang-switcher {
+        position: absolute;
+        top: 18px;
+        right: 60px;
+        margin: 0;
+        padding: 0;
+        border: none;
     }
     
     .hero h1 {
